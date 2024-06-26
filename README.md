@@ -15,7 +15,7 @@ The [clpfd](https://www.swi-prolog.org/man/clpfd.html) Constraint Logic Programm
 In this section, the important predicates are briefly described. For more details, refer to the comments in the code.
 
 - ``main(Filename)``: This is the entry point of the program that receives the name of the file with the graph, reads the facts describing the graph, calculates the coloring, and writes it on the standard output.
-- ``colorGraph``: Finds the Maximum Clique in the graph, then tries to find colorings of size (MaxCliqueSize, N), where N is the number of Vertices of the Graph. Once it succeeds, it presents the coloring in a readable format.
+- ``colorGraph``: Finds the Maximum Clique in the graph, then tries to find colorings of size in the range (MaxCliqueSize, N), where N is the number of Vertices of the Graph. Once it succeeds, it presents the coloring in a readable format.
 - ``maxClique``: Finds the Maximum Clique in a given Graph. It works by trying to find a Max Clique starting from every Vertex and only extending the Clique when the newly added candidate still forms a Clique with the rest of the current Clique, i.e., it is connected to the rest of the current Clique. This solution was considerably faster than a naive solution that tried all subsets of a list, filtered them to find all Cliques, and outputted the longest one.
 
 ### Graph Format
