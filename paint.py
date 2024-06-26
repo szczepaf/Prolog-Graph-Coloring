@@ -39,7 +39,7 @@ def draw_graph(G):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python plot_graph.py 'v0-1,v1-2,...' edges.txt")
+        print("Usage: python plot_graph.py edges.txt 'coloring_from_prolog'")
         return
     coloring = parse_coloring_argument(sys.argv[2])
     G = read_graph_from_file(sys.argv[1])
